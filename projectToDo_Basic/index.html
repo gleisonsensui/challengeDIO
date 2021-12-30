@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desafio de criação de um TO-DO basico, sem persistencia de dados.">
+    <title>To Do - Basico</title>
+    <link rel="stylesheet" href="./public/styles/styleSheets.css">
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <form action="#">
+                <fieldset>
+                    <legend>Lista de Tarefas - To Do Basico</legend>
+                    <fieldset>
+                        <legend>Entrada de Tarefas</legend>
+                        <div class="form-item">
+                            <input type="text" name="task" id="task-name" class="task-entry">
+                            <label for="task-name">Tarefa</label>
+                        </div>
+                        <div class="form-item">
+                            <select name="type-task" id="task-type">
+                                <option value="">--Selecione o tipo--</option>
+                                <option value="lazer">Lazer</option>
+                                <option value="trabalho">Trabalho</option>
+                                <option value="aprendizagem">Aprendizagem</option>
+                                <option value="familia">Familia</option>
+                                <option value="casa">Casa / Domestico</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <input type="datetime" name="data-register" id="task-register">
+                            <label for="task-data">Data do Registro</label>
+                        </div>
+                        <div class="form-item">
+                            <input type="datetime" name="data" id="task-data">
+                            <label for="task-data">Data da tarefa</label>
+                        </div>
+                        <div class="submit-area">
+                            <button id="btn-add" type="button">Add Task</button>
+                            <button id="btn-clear" type="button">Limpar formulario</button>
+                        </div>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </div>
+        <div class="task-list">
+
+        </div>
+    </main>
+
+    <script src="./public/scripts/ecma_toDo.js"></script>
+</body>
+</html>
